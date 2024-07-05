@@ -10,7 +10,7 @@ original publication.
 ## **Data Balancing and Augmentation:**
 
 <p align="center">
-  <img src="media\image1.png" style="width:0.20912in;height:0.20912in" alt="Chart, histogram Description automatically generated" />
+  <img src="media\GUI for weed detection display.png" style="width:0.20912in;height:0.20912in" alt="Chart, histogram Description automatically generated" />
 </p>
 
 <p align="center">
