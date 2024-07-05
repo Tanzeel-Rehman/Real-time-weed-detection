@@ -461,7 +461,7 @@ namespace WindowsForms
                     Console.WriteLine(bearing);*/
                     double pitch = 0.0;
                     double tilt=0.0;
-                   // pictureBox1.Image = Compass.DrawCompass(bearing, pitch, 80, tilt, 80, pictureBox1.Size);
+                   pictureBox1.Image = Compass.DrawCompass(bearing, pitch, 80, tilt, 80, pictureBox1.Size);
                 };
                 this.Invoke(dt);
             }
