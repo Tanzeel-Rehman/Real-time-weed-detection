@@ -1,0 +1,94 @@
+<doc>
+  <assembly>
+    <name>WorkArea0</name>
+  </assembly>
+  <member name="T:Peltarion.Deployed.WorkArea0">
+    <summary>This class was deployed with Peltarion Synapse.</summary>
+  </member>
+  <member name="E:Peltarion.Deployed.WorkArea0.MessageEvent">
+    <summary>Reports occasional messages.</summary>
+  </member>
+  <member name="F:Peltarion.Deployed.WorkArea0.ser">
+    <summary>A serializer used to serialize Messages (default is to disk).</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.#ctor">
+    <summary>Creates a new WorkArea0 instance.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.#ctor(System.String)">
+    <summary>Creates a new WorkArea0 instance with a path to a logfile.</summary>
+    <param name="logPath">The path to the logfile. If the file does not exist it will be created, otherwise appended to.</param>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.#ctor(System.Xml.XmlDocument,System.String)">
+    <summary>Creates a new WorkArea0 instance from XML and specify a path to a logfile.</summary>
+    <param name="logPath">The path to the logfile. If the file does not exist it will be created, otherwise appended to.</param>
+    <param name="xml">XML as previously obtained by ToXml().</param>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.#ctor(System.Xml.XmlDocument)">
+    <summary>Creates a new WorkArea0 instance from XML.</summary>
+    <param name="xml">XML as previously obtained by ToXml().</param>
+  </member>
+  <member name="P:Peltarion.Deployed.WorkArea0.Data">
+    <summary>Get the depot that contains the DataUnits used.</summary>
+  </member>
+  <member name="P:Peltarion.Deployed.WorkArea0.Topology">
+    <summary>Get the depot that contains the Components used.</summary>
+  </member>
+  <member name="P:Peltarion.Deployed.WorkArea0.Context">
+    <summary>Get the Context object.</summary>
+  </member>
+  <member name="P:Peltarion.Deployed.WorkArea0.ControlSystem">
+    <summary>Get the ControlSystem used.</summary>
+  </member>
+  <member name="P:Peltarion.Deployed.WorkArea0.NoUpdate">
+    <summary>Gets or Sets a value indicating whether Learning is swiched on or off. This is an alias for ControlSystem.NoUpdate.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.Run">
+    <summary>Runs the ControlSystem (see also StepEpoch). This is an alias for ControlSystem.Run.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.Pause">
+    <summary>Asks the ControlSystem to pause. This is an alias for ControlSystem.Pause.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.Halt">
+    <summary>Asks the ControlSystem to halt. (Reset in not called, this is the force version of pause but can be identical to pause.) This is an alias for ControlSystem.Halt.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.StepEpoch">
+    <summary>Runs the ControlSystem with all available samples once. (This is most likely what you are looking for.) This is an alias for ControlSystem.StepEpoch.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.StepSample">
+    <summary>Runs the ControlSystem with one batch-size of all available samples once. If batch-size == 0, or batch-size and epoch-length are the same, StepEpoch and StepSample are probably identical.  This is an alias for ControlSystem.StepSample.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.Reset">
+    <summary>Be Careful! Resets the entire system and randomizes the weights. This will destroy ALL prior learning. This is an alias for ControlSystem.Reset.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.Validate">
+    <summary>Tests the system configuration. This is an alias for ControlSystem.Validate.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.OnMessageEvent(System.object,Peltarion.Core.ReportErrorEventArgs)">
+    <summary>Fires the MessageEvent.</summary>
+    <param name="sender">Is ignored and replaced by 'this'.</param>
+    <param name="e">A ReportErrorEventArgs object containg the message and alert level and so on.</param>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.Set_CSV(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+    <summary>System input data destined for the CSV DataUnit.</summary>
+    <param name="GR">GR</param>
+    <param name="WBB">WBB</param>
+    <param name="Hf3">Hf3</param>
+    <param name="Hf4">Hf4</param>
+    <param name="Hf5">Hf5</param>
+    <param name="Sf2">Sf2</param>
+    <param name="Sf5">Sf5</param>
+    <param name="Sf7">Sf7</param>
+    <param name="Sf10">Sf10</param>
+    <param name="Sf13">Sf13</param>
+  </member>
+  <member name="P:Peltarion.Deployed.WorkArea0.Input_CSV">
+    <summary>System input data destined for the CSV DataUnit. The Matrix should have 10 Columns. Each row sould consist of GR, WBB, Hf3, Hf4, Hf5, Sf2, Sf5, Sf7, Sf10, Sf13 in that order.</summary>
+  </member>
+  <member name="M:Peltarion.Deployed.WorkArea0.Set_CSV(System.Double[])">
+    <summary>System input data destined for the CSV DataUnit. The array should be 10 long and consist of GR, WBB, Hf3, Hf4, Hf5, Sf2, Sf5, Sf7, Sf10, Sf13 in that order.</summary>
+  </member>
+  <member name="P:Peltarion.Deployed.WorkArea0.FunctionLayer4_Port0">
+    <summary>The output from FunctionLayer4 on port 0. The returned Matrix is safe. You do not need to use .MClone() to obtain a copy.</summary>
+    <returns>The returned Matrix is safe. You do not need to use .MClone() to obtain a copy.</returns>
+  </member>
+</doc>
