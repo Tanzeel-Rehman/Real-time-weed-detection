@@ -7,12 +7,11 @@ For Complete details on the results and data requirements, see the
 original publication.
 <p>&nbsp;</p>  
 
-## **Data Balancing and Augmentation:**
+## **GUI for Inteeraction With Camera and Controls:**
 
 <p align="center">
   <img src="media\GUI for weed detection display.png" style="width:0.20912in;height:0.20912in" alt="Chart, histogram Description automatically generated" />
 </p>
 
 <p align="center">
-  (a)
-</p>
+  </p>
